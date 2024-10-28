@@ -50,10 +50,16 @@ export default async function handler(
       });
     }
 
+    let start = (page - 1) * items_per_page;
+    let end = start + items_per_page;
+
+    console.log("start", start);
+    console.log("end", end);
+
     const { data, error } = await supabase
       .from("users")
       .select("*")
-      .range(page, page + items_per_page - 1);
+      .range(start, end);
 
     if (error) {
       return res.status(400).json({ message: error.message });
