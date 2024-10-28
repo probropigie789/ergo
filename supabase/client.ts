@@ -6,6 +6,11 @@ export async function createSupbaseAdmin() {
       autoRefreshToken: false,
       persistSession: false,
     },
+    global: {
+      headers: {
+        Authorization: `Bearer ${process.env.SERVICE_ROLE}`,
+      },
+    },
   });
 }
 
