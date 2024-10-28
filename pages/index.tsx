@@ -1,12 +1,26 @@
 import { useEffect, useState } from "react";
 
 export default function Home() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<any>(null);
 
   useEffect(() => {
-    fetch("/api/hello")
+    fetch("/api/sign-up", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email: "example4@gmail.com",
+        password: "example-password",
+        name: "Example User",
+        role: "user",
+        subdomain: "example-subdomain",
+        companyDetails: "Example Company Details",
+      }),
+    })
       .then((response) => response.json())
-      .then((data) => setData(data));
+      .then((data) => setData(data))
+      .catch((error) => setData({ error }));
   }, []);
 
   return (
