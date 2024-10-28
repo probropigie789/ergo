@@ -1,6 +1,3 @@
-Here's a markdown documentation for your API handler:
-
-```markdown
 # API Documentation: /api/sign-in
 
 ## Overview
@@ -14,24 +11,24 @@ The `/api-sign-in` endpoint allows users to authenticate using their email and p
 ## Request Structure
 
 ### URL
-```
 
 POST /api/sign-in
 
-````
-
 ### Headers
+
 - `Content-Type: application/json`
 
 ### Request Body
+
 The request body must be a JSON object containing the following fields:
 
-| Field    | Type   | Required | Description                    |
-|----------|--------|----------|--------------------------------|
-| email    | string | Yes      | The user's email address.      |
-| password | string | Yes      | The user's password.           |
+| Field    | Type   | Required | Description               |
+| -------- | ------ | -------- | ------------------------- |
+| email    | string | Yes      | The user's email address. |
+| password | string | Yes      | The user's password.      |
 
 ### Example Request
+
 ```json
 POST /api/sign-in
 Content-Type: application/json
@@ -40,7 +37,7 @@ Content-Type: application/json
     "email": "user@example.com",
     "password": "securePassword123"
 }
-````
+```
 
 ## Response Structure
 
