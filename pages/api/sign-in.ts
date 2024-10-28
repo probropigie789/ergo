@@ -7,6 +7,10 @@ export default async function handler(
 ) {
   const method = req.method;
 
+  if (method === "OPTIONS") {
+    return res.status(200).send("ok");
+  }
+
   if (method !== "POST") {
     return res
       .status(405)
