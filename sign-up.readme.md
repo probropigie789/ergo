@@ -1,5 +1,3 @@
-/\*\*
-
 # API Documentation: /api/sign-up
 
 ## Overview
