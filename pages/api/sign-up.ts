@@ -24,6 +24,13 @@ export default async function handler(
       .json({ message: `'${method}' Method Not Allowed - Use 'POST'` });
   }
 
+  if (!req.body) {
+    return res.status(400).json({
+      error: "Missing request body",
+      data: null,
+    });
+  }
+
   const email = req.body.email;
   const password = req.body.password;
 

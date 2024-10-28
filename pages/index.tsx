@@ -113,23 +113,20 @@ function SignUpTester() {
     setError("");
 
     try {
-      const response = await fetch(
-        "https://ergoserver.vercel.app/api/sign-up",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            email,
-            password,
-            name,
-            role,
-            subdomain,
-            companyDetails,
-          }),
-        }
-      );
+      const response = await fetch("/api/sign-up", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email,
+          password,
+          name,
+          role,
+          subdomain,
+          companyDetails,
+        }),
+      });
 
       const result = await response.json();
       if (!response.ok) {
