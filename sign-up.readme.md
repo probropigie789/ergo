@@ -1,29 +1,41 @@
-<div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]"><div class="markdown prose w-full break-words dark:prose-invert dark"><p>Here's the complete API documentation formatted for Markdown. You can copy it directly:</p><pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">markdown</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-markdown"><span class="hljs-section"># API Documentation: `/api/sign-up`</span>
+/\*\*
 
-<span class="hljs-section">## Overview</span>
-The <span class="hljs-code">`/api/sign-up`</span> endpoint allows users to create a new account. It hashes the provided password for security and stores user details in the database, ensuring that all necessary user information is recorded accurately. If there's an error during user entry creation, the endpoint will also handle cleanup by deleting the created user.
+# API Documentation: /api/sign-up
 
-<span class="hljs-section">## HTTP Method</span>
-<span class="hljs-code">`POST`</span>
+## Overview
 
-<span class="hljs-section">## Request Structure</span>
+The `/api/sign-up` endpoint allows users to create a new account. It hashes the provided password for security and stores user details in the database, ensuring that all necessary user information is recorded accurately. If there's an error during user entry creation, the endpoint will also handle cleanup by deleting the created user.
 
-<span class="hljs-section">### URL</span>
-</code></div></div></pre><p>POST /api/sign-up</p><pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">shell</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-shell"><span class="hljs-meta prompt_"> #</span><span class="bash"><span class="hljs-comment">## Headers</span></span>
-</code></div></div></pre><p>Content-Type: application/json</p><pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">vbnet</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-vbnet">
+## HTTP Method
+
+**POST**
+
+## Request Structure
+
+### URL
+
+```
+POST /api/sign-up
+```
+
+### Headers
+
+```
+Content-Type: application/json
+```
 
 ### Request Body
 
-The request body must be a JSON <span class="hljs-type">object</span> containing the following fields:
+The request body must be a JSON object containing the following fields:
 
-| Field            | Type                                  | Required | Description                                                                                           |
-| ---------------- | ------------------------------------- | -------- | ----------------------------------------------------------------------------------------------------- | ------- |
-| `email`          | <span class="hljs-type">string</span> | Yes      | The user<span class="hljs-comment">'s email address.                                                  | </span> |
-| `password`       | <span class="hljs-type">string</span> | Yes      | The user<span class="hljs-comment">'s password.                                                       | </span> |
-| `name`           | <span class="hljs-type">string</span> | Yes      | The full name <span class="hljs-keyword">of</span> the user.                                          |
-| `role`           | <span class="hljs-type">string</span> | Yes      | The user<span class="hljs-comment">'s role. Must be one of: `admin`, `compliance_manager`, or `user`. | </span> |
-| `subdomain`      | <span class="hljs-type">string</span> | Yes      | The user<span class="hljs-comment">'s designated subdomain.                                           | </span> |
-| `companyDetails` | <span class="hljs-type">string</span> | Yes      | Information about the user<span class="hljs-comment">'s company.                                      | </span> |
+| Field          | Type   | Required | Description                                                          |
+| -------------- | ------ | -------- | -------------------------------------------------------------------- |
+| email          | string | Yes      | The user's email address.                                            |
+| password       | string | Yes      | The user's password.                                                 |
+| name           | string | Yes      | The full name of the user.                                           |
+| role           | string | Yes      | The user's role. Must be one of: admin, compliance_manager, or user. |
+| subdomain      | string | Yes      | The user's designated subdomain.                                     |
+| companyDetails | string | Yes      | Information about the user's company.                                |
 
 ### Example Request
 
@@ -32,77 +44,147 @@ POST /api/sign-up
 Content-Type: application/json
 
 {
-  <span class="hljs-string">"email"</span>: <span class="hljs-string">"user@example.com"</span>,
-  <span class="hljs-string">"password"</span>: <span class="hljs-string">"securePassword123"</span>,
-  <span class="hljs-string">"name"</span>: <span class="hljs-string">"John Doe"</span>,
-  <span class="hljs-string">"role"</span>: <span class="hljs-string">"admin"</span>,
-  <span class="hljs-string">"subdomain"</span>: <span class="hljs-string">"example"</span>,
-  <span class="hljs-string">"companyDetails"</span>: <span class="hljs-string">"Example Corp"</span>
+    "email": "user@example.com",
+    "password": "securePassword123",
+    "name": "John Doe",
+    "role": "admin",
+    "subdomain": "example",
+    "companyDetails": "Example Corp"
 }
-</code></div></div></pre><h2>Response Structure</h2><h3>Success Response</h3><ul><li><strong>Status Code</strong>: <code>200 OK</code></li><li><strong>Response Body</strong>: A JSON object containing a success message and the created user data.</li></ul><pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">json</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"User created successfully"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-    <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"c3297bd1-5e3d-4b2f-99a0-ec590e68b985"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"aud"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"authenticated"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"role"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"user"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"email"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"example4@gmail.com"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"email_confirmed_at"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2024-10-28T02:11:42.239625159Z"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"phone"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">""</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"app_metadata"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-      <span class="hljs-attr">"provider"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"email"</span><span class="hljs-punctuation">,</span>
-      <span class="hljs-attr">"providers"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
-        <span class="hljs-string">"email"</span>
-      <span class="hljs-punctuation">]</span>
-    <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"user_metadata"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span><span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"identities"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">[</span>
-      <span class="hljs-punctuation">{</span>
-        <span class="hljs-attr">"identity_id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"65b9734b-acc9-4c6c-8f2e-e67be7028977"</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"c3297bd1-5e3d-4b2f-99a0-ec590e68b985"</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"user_id"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"c3297bd1-5e3d-4b2f-99a0-ec590e68b985"</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"identity_data"</span><span class="hljs-punctuation">:</span> <span class="hljs-punctuation">{</span>
-          <span class="hljs-attr">"email"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"example4@gmail.com"</span><span class="hljs-punctuation">,</span>
-          <span class="hljs-attr">"email_verified"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
-          <span class="hljs-attr">"phone_verified"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
-          <span class="hljs-attr">"sub"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"c3297bd1-5e3d-4b2f-99a0-ec590e68b985"</span>
-        <span class="hljs-punctuation">}</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"provider"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"email"</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"last_sign_in_at"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2024-10-28T02:11:42.23513355Z"</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"created_at"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2024-10-28T02:11:42.237818Z"</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"updated_at"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2024-10-28T02:11:42.237818Z"</span><span class="hljs-punctuation">,</span>
-        <span class="hljs-attr">"email"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"example4@gmail.com"</span>
-      <span class="hljs-punctuation">}</span>
-    <span class="hljs-punctuation">]</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"created_at"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2024-10-28T02:11:42.234138Z"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"updated_at"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"2024-10-28T02:11:42.239846Z"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"is_anonymous"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"hashed_password"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"$2b$10$f40c36kq41oY2b1DTMD.c.xqCgKLcljPhFIC2DD/oK7kIpgv2k.dC"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"subdomain"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"example-subdomain"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"company_details"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Example Company Details"</span><span class="hljs-punctuation">,</span>
-    <span class="hljs-attr">"name"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Example User"</span>
-  <span class="hljs-punctuation">}</span>
-<span class="hljs-punctuation">}</span>
-</code></div></div></pre><h3>Error Responses</h3><ol><li><p><strong>Method Not Allowed</strong></p><ul><li><strong>Status Code</strong>: <code>405 Method Not Allowed</code></li><li><strong>Response Body</strong>:</li></ul><pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">json</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"'GET' Method Not Allowed - Use 'POST'"</span>
-<span class="hljs-punctuation">}</span>
-</code></div></div></pre></li><li><p><strong>Missing Required Fields</strong></p><ul><li><strong>Status Code</strong>: <code>400 Bad Request</code></li><li><strong>Response Body</strong>:</li></ul><pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">json</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Email and password are required"</span>
-<span class="hljs-punctuation">}</span>
-</code></div></div></pre><p>or</p><pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">json</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Name, Role, Subdomain and Company Details are required"</span>
-<span class="hljs-punctuation">}</span>
-</code></div></div></pre></li><li><p><strong>Invalid Role</strong></p><ul><li><strong>Status Code</strong>: <code>400 Bad Request</code></li><li><strong>Response Body</strong>:</li></ul><pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">json</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Role must be either admin, compliance_manager or user"</span>
-<span class="hljs-punctuation">}</span>
-</code></div></div></pre></li><li><p><strong>Error Creating User in Supabase</strong></p><ul><li><strong>Status Code</strong>: <code>400 Bad Request</code></li><li><strong>Response Body</strong>:</li></ul><pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">json</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"Error creating user entry: {error message}"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span>
-<span class="hljs-punctuation">}</span>
-</code></div></div></pre></li><li><p><strong>User Not Created</strong></p><ul><li><strong>Status Code</strong>: <code>500 Internal Server Error</code></li><li><strong>Response Body</strong>:</li></ul><pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">json</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-json"><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">"message"</span><span class="hljs-punctuation">:</span> <span class="hljs-string">"User not created"</span><span class="hljs-punctuation">,</span>
-  <span class="hljs-attr">"data"</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">null</span></span>
-<span class="hljs-punctuation">}</span>
-</code></div></div></pre></li></ol><h2>Security</h2><p>Passwords are hashed using <code>bcrypt</code> with 10 salt rounds before being stored in the database, ensuring that user passwords are securely handled.</p><h2>Notes</h2><ul><li>Ensure that the email address is unique in your database to prevent duplicate accounts.</li><li>Passwords should meet security criteria (e.g., length and complexity) to enhance user account security.</li><li>If an error occurs while inserting the user entry into the database, the newly created user in Supabase will be deleted to maintain consistency.</li></ul><p>This documentation provides a clear overview of how to use the <code>/sign-up</code> endpoint, what to expect, and how to handle various scenarios. Adjust any specifics as needed to fit your application!</p><pre class="!overflow-visible"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary dark:bg-gray-950"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary">csharp</div><div class="sticky top-9 md:top-[5.75rem]"><div class="absolute bottom-0 right-2 flex h-9 items-center"><div class="flex items-center rounded bg-token-sidebar-surface-primary px-2 font-sans text-xs text-token-text-secondary dark:bg-token-main-surface-secondary"><span class="" data-state="closed"><button class="flex gap-1 items-center py-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="icon-sm"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 5C7 3.34315 8.34315 2 10 2H19C20.6569 2 22 3.34315 22 5V14C22 15.6569 20.6569 17 19 17H17V19C17 20.6569 15.6569 22 14 22H5C3.34315 22 2 20.6569 2 19V10C2 8.34315 3.34315 7 5 7H7V5ZM9 7H14C15.6569 7 17 8.34315 17 10V15H19C19.5523 15 20 14.5523 20 14V5C20 4.44772 19.5523 4 19 4H10C9.44772 4 9 4.44772 9 5V7ZM5 9C4.44772 9 4 9.44772 4 10V19C4 19.5523 4.44772 20 5 20H14C14.5523 20 15 19.5523 15 19V10C15 9.44772 14.5523 9 14 9H5Z" fill="currentColor"></path></svg>Copy code</button></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-csharp">
-You can paste <span class="hljs-keyword">this</span> <span class="hljs-keyword">into</span> a `.md` file, <span class="hljs-keyword">and</span> it will render correctly <span class="hljs-keyword">in</span> Markdown viewers.
-</code></div></div></pre></div></div>
 ```
+
+## Response Structure
+
+### Success Response
+
+**Status Code: 200 OK**
+
+Response Body: A JSON object containing a success message and the created user data.
+
+```json
+{
+  "message": "User created successfully",
+  "data": {
+    "id": "c3297bd1-5e3d-4b2f-99a0-ec590e68b985",
+    "aud": "authenticated",
+    "role": "user",
+    "email": "example4@gmail.com",
+    "email_confirmed_at": "2024-10-28T02:11:42.239625159Z",
+    "phone": "",
+    "app_metadata": {
+      "provider": "email",
+      "providers": ["email"]
+    },
+    "user_metadata": {},
+    "identities": [
+      {
+        "identity_id": "65b9734b-acc9-4c6c-8f2e-e67be7028977",
+        "id": "c3297bd1-5e3d-4b2f-99a0-ec590e68b985",
+        "user_id": "c3297bd1-5e3d-4b2f-99a0-ec590e68b985",
+        "identity_data": {
+          "email": "example4@gmail.com",
+          "email_verified": false,
+          "phone_verified": false,
+          "sub": "c3297bd1-5e3d-4b2f-99a0-ec590e68b985"
+        },
+        "provider": "email",
+        "last_sign_in_at": "2024-10-28T02:11:42.23513355Z",
+        "created_at": "2024-10-28T02:11:42.237818Z",
+        "updated_at": "2024-10-28T02:11:42.237818Z",
+        "email": "example4@gmail.com"
+      }
+    ],
+    "created_at": "2024-10-28T02:11:42.234138Z",
+    "updated_at": "2024-10-28T02:11:42.239846Z",
+    "is_anonymous": false,
+    "hashed_password": "$2b$10$f40c36kq41oY2b1DTMD.c.xqCgKLcljPhFIC2DD/oK7kIpgv2k.dC",
+    "subdomain": "example-subdomain",
+    "company_details": "Example Company Details",
+    "name": "Example User"
+  }
+}
+```
+
+### Error Responses
+
+#### Method Not Allowed
+
+**Status Code: 405 Method Not Allowed**
+
+Response Body:
+
+```json
+{
+  "message": "'GET' Method Not Allowed - Use 'POST'"
+}
+```
+
+#### Missing Required Fields
+
+**Status Code: 400 Bad Request**
+
+Response Body:
+
+```json
+{
+  "message": "Email and password are required"
+}
+```
+
+or
+
+```json
+{
+  "message": "Name, Role, Subdomain and Company Details are required"
+}
+```
+
+#### Invalid Role
+
+**Status Code: 400 Bad Request**
+
+Response Body:
+
+```json
+{
+  "message": "Role must be either admin, compliance_manager or user"
+}
+```
+
+#### Error Creating User in Supabase
+
+**Status Code: 400 Bad Request**
+
+Response Body:
+
+```json
+{
+  "message": "Error creating user entry: {error message}",
+  "data": null
+}
+```
+
+#### User Not Created
+
+**Status Code: 500 Internal Server Error**
+
+Response Body:
+
+```json
+{
+  "message": "User not created",
+  "data": null
+}
+```
+
+## Security
+
+Passwords are hashed using bcrypt with 10 salt rounds before being stored in the database, ensuring that user passwords are securely handled.
+
+## Notes
+
+- Ensure that the email address is unique in your database to prevent duplicate accounts.
+- Passwords should meet security criteria (e.g., length and complexity) to enhance user account security.
+- If an error occurs while inserting the user entry into the database, the newly created user in Supabase will be deleted to maintain consistency.
+
+This documentation provides a clear overview of how to use the `/sign-up` endpoint, what to expect, and how to handle various scenarios. Adjust any specifics as needed to fit your application!
