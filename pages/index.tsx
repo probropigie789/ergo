@@ -1,4 +1,5 @@
 import AddTaskForm from "@/components/AddTaskForm";
+import { GetTasksTester } from "@/components/GetTasksTester";
 import SignInTester from "@/components/SignInTester";
 import SignUpTester from "@/components/SignUpTester";
 import UpdateUserTester from "@/components/UpdateUser";
@@ -24,6 +25,8 @@ export default function Home() {
         return <GetUserTester />;
       case "add-task":
         return <AddTaskForm />;
+      case "get-tasks":
+        return <GetTasksTester />;
       default:
         return <SignInTester />;
     }
@@ -43,6 +46,7 @@ export default function Home() {
         <option value="get-user">Get User Tester</option>
         <option value="get-users">Get Users Tester</option>
         <option value="add-task">Add Task Form</option>
+        <option value="get-tasks">Get Tasks Tester</option>
         {/* Add options for other testers here */}
       </select>
       <div className="mt-4">{renderTester()}</div>
