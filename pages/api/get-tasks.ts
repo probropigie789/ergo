@@ -38,7 +38,7 @@ export default async function handler(
 
   if (isPaginated) {
     let countQuery = supabase
-      .from("users")
+      .from("tasks")
       .select("id", { count: "exact", head: true });
 
     if (created_by) {
@@ -53,7 +53,7 @@ export default async function handler(
       return res.status(400).json({ message: countError });
     }
 
-    const max_pages = Math.ceil((count - 1) / items_per_page);
+    const max_pages = Math.ceil(count / items_per_page);
 
     if (page > max_pages) {
       return res.status(400).json({
@@ -64,6 +64,7 @@ export default async function handler(
     let start = (page - 1) * items_per_page;
     let end = start + items_per_page - 1;
 
+    console.log("count", count);
     console.log("start", start);
     console.log("end", end);
 

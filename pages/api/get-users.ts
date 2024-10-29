@@ -42,7 +42,7 @@ export default async function handler(
       return res.status(400).json({ message: countError });
     }
 
-    const max_pages = Math.ceil((count - 1) / items_per_page);
+    const max_pages = Math.ceil(count / items_per_page);
 
     if (page > max_pages) {
       return res.status(400).json({
