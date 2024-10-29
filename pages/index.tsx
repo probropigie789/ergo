@@ -1,3 +1,4 @@
+import AddTaskForm from "@/components/AddTaskForm";
 import { useEffect, useState } from "react";
 
 function SignInTester() {
@@ -616,6 +617,8 @@ export default function Home() {
         return <GetUsersTester />;
       case "get-user":
         return <GetUserTester />;
+      case "add-task":
+        return <AddTaskForm />;
       default:
         return <SignInTester />;
     }
@@ -634,6 +637,7 @@ export default function Home() {
         <option value="update-user">Update User Tester</option>
         <option value="get-user">Get User Tester</option>
         <option value="get-users">Get Users Tester</option>
+        <option value="add-task">Add Task Form</option>
         {/* Add options for other testers here */}
       </select>
       <div className="mt-4">{renderTester()}</div>
